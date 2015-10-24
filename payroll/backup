@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+mysqldump -u corbett --password=rockon123 payroll > backups/payroll.backup.sql
