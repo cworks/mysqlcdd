@@ -12,4 +12,4 @@ echo "Creating database ${database}"
 mysql -u corbett --password=rockon123 -e "${create}"
 
 echo "Restoring database ${database}"
-mysql -u corbett --password=rockon123 payroll < backups/payroll.backup.sql
+mysql -u corbett --password=rockon123 ${database} < backups/payroll.backup.sql

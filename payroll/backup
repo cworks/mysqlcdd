@@ -1,2 +1,4 @@
 #!/usr/bin/env bash
-mysqldump -u corbett --password=rockon123 payroll > backups/payroll.backup.sql
+database=payroll
+backupFile=payroll.backup.sql
+mysqldump -u corbett --password=rockon123 ${database} > backups/${backupFile}
